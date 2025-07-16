@@ -14,15 +14,33 @@ body {
   box-shadow: #1b1d1f 2px 2px 4px;
 }
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
   text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
 }
+
+.logo i {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
 .navbar-logo {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
   text-decoration: none;
   list-style: none;
-  color: white;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
 }
 .navbar-links {
   display: flex;
@@ -34,4 +52,5 @@ body {
 .nav-link {
   color: white;
   text-decoration: none;
+  font-size: 1.25rem;
 }
