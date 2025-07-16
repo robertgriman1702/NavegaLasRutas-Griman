@@ -1,6 +1,5 @@
 import Item from '../Item/Item.jsx';
 import './itemlist.css';
-import HocFilterProducts from '../Hoc/HocFilterProdcuts.jsx';
 
 const  ItemList = ({products}) => {
   return (
@@ -14,6 +13,4 @@ const  ItemList = ({products}) => {
   );
 }
 
-const ItemListWithSearch = HocFilterProducts(ItemList);
-
-export { ItemList, ItemListWithSearch };
+export default ItemList;
