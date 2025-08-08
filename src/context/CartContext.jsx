@@ -5,8 +5,22 @@ const CartContext = createContext();
 const CartProvider = ({ children}) => {
     const [cart, setCart] = useState([]);
 
-    const addProductInCart = (product) => {
-        setCart([...cart, product]);
+     const addProductInCart = (newProduct) => {
+        setCart(prevCart => {
+            const existingProductIndex = prevCart.findIndex(
+                product => product.id === newProduct.id
+            );
+            if (existingProductIndex >= 0) {     
+                const updatedCart = [...prevCart];
+                updatedCart[existingProductIndex] = {
+                    ...updatedCart[existingProductIndex],
+                    quantity: updatedCart[existingProductIndex].quantity + newProduct.quantity
+                };
+                return updatedCart;
+            } else {
+                return [...prevCart, newProduct];
+            }
+        });
     };
 
     const totalQuantity = () => {
