@@ -13,14 +13,15 @@ body {
   padding: 1rem 2rem;
   box-shadow: #1b1d1f 2px 2px 4px;
 }
+
 .logo {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: bold;
   color: white;
-  text-decoration: none;
+  text-decoration: none; 
   list-style: none;
   cursor: pointer;
   padding: 0.2rem 0.5rem;
@@ -33,7 +34,7 @@ body {
 
 .navbar-logo {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: bold;
   color: white;
   text-decoration: none;
@@ -42,6 +43,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .navbar-links {
   display: flex;
   gap: 2rem;
@@ -51,6 +53,20 @@ body {
 
 .nav-link {
   color: white;
-  text-decoration: none;
+  text-decoration: none; 
   font-size: 1.25rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+}
+
+.navbar a:hover, 
+.navbar a:focus, 
+.navbar a:visited {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
 }

@@ -27,3 +27,17 @@
   margin-left: 10px;
   cursor: pointer;
 }
+
+.cart-widget {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cart-widget:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cart-widget:focus {
+  outline: none;
+}

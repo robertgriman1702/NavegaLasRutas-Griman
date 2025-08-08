@@ -3,6 +3,7 @@ import { CartContext } from "../../context/CartContext";
 import FormCheckout from "../FormCheckout/FormCheckout";
 import { addDoc, collection } from "firebase/firestore";
 import db from "../../db/Db";
+import './checkout.css';
 
 const Checkout = () => {
   const [dataform, setDataform] = useState({

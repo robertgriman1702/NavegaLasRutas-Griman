@@ -1,3 +1,4 @@
+
 .item {
   background: #232425;
   border-radius: 12px;
@@ -35,4 +36,24 @@
   color: #bdbdbd;
   font-size: 1rem;
   margin: 0;
+}
+
+.item a {
+  all: unset; 
+  cursor: pointer;
+}
+
+.item-detail-link {
+  color: #3498db;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background-color: rgba(52, 152, 219, 0.1);
+  transition: all 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.item-detail-link:hover {
+  background-color: rgba(52, 152, 219, 0.2);
+  color: #2980b9;
 }
