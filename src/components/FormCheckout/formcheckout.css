@@ -90,3 +90,22 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .form-main-container {
+    padding: 1rem;
+  }
+  
+  .form-title {
+    font-size: 1.5rem;
+  }
+  
+  .btn {
+    padding: 0.8rem;
+  }
+}

@@ -51,3 +51,17 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+  .checkout {
+    padding: 1.5rem;
+  }
+  
+  .checkout > div {
+    padding: 1.5rem;
+  }
+  
+  .checkout h2 {
+    font-size: 1.5rem;
+  }
+}

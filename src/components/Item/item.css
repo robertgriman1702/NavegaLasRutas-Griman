@@ -73,3 +73,20 @@
 .item-detail-link{
   padding: 2.2rem;
 }
+
+@media (max-width: 600px) {
+  .item {
+    width: 100%;
+    min-height: auto;
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .item h2 {
+    min-height: auto;
+    font-size: 1.1rem;
+  }
+}

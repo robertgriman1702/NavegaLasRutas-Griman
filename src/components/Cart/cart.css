@@ -137,3 +137,24 @@
   background-color: #2980b9;
   transform: translateY(-2px);
 }
+
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  
+  .cart-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .cart-item-details {
+    padding: 0;
+  }
+  
+  .cart-summary {
+    text-align: center;
+  }
+}

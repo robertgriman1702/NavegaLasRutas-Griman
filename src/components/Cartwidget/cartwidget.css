@@ -41,3 +41,18 @@
 .cart-widget:focus {
   outline: none;
 }
+
+@media (max-width: 480px) {
+  .cart-widget {
+    gap: 0.5rem;
+  }
+  
+  .bi-cart3 {
+    font-size: 1.2rem;
+  }
+  
+  .cart-counter {
+    font-size: 0.7rem;
+    padding: 1px 4px;
+  }
+}
