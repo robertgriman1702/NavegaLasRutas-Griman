@@ -6,6 +6,7 @@ const products = [
     price: 15.00,
     image: "/img/Captura de pantalla_20-4-2025_235638_www.instagram.com.jpeg",
     category: "combos",
+    stock: 8 
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ const products = [
     price: 20.00,
     image: "/img/Captura de pantalla_20-4-2025_235649_www.instagram.com.jpeg",
     category: "combos",
+    stock: 5  
   },
   {
     id: 3,
@@ -21,7 +23,8 @@ const products = [
     description: "Almohadilla de tinta tamaño No. 2 marca AMIKO, perfecta para sellos de oficina y uso escolar.",
     price: 2.0,
     image: "/img/IMG-20250624-WA0036.jpg",
-    category: "products"
+    category: "products",
+    stock: 12 
   },
   {
     id: 4,
@@ -29,7 +32,8 @@ const products = [
     description: "Almohadilla huellero No. 116 RD, ideal para toma de huellas en trámites y documentos oficiales.",
     price: 1.6,
     image: "/img/IMG-20250624-WA0035.jpg",
-    category: "products"
+    category: "products",
+    stock: 7 
   },
   {
     id: 5,
@@ -37,7 +41,8 @@ const products = [
     description: "Archivadores de lomo ancho tamaño carta u oficio marca OFIMAK, ideales para organizar documentos.",
     price: 25.0,
     image: "/img/IMG-20250608-WA0117.jpg",
-    category: "products"
+    category: "products",
+    stock: 3  
   },
   {
     id: 6,
@@ -45,7 +50,8 @@ const products = [
     description: "Paquete de 20 archicomodos plásticos Office, perfectos para almacenar y proteger documentos.",
     price: 75.0,
     image: "/img/IMG-20250608-WA0114.jpg",
-    category: "products"
+    category: "products",
+    stock: 2  
   },
   {
     id: 7,
@@ -53,7 +59,8 @@ const products = [
     description: "Caja de 12 bolígrafos de gel negro RD, escritura suave y duradera para uso diario.",
     price: 2.5,
     image: "/img/Imagen de WhatsApp 2025-06-10 a las 21.57.57_a339f1f6.jpg",
-    category: "products"
+    category: "products",
+    stock: 9  
   },
   {
     id: 8,
@@ -61,7 +68,8 @@ const products = [
     description: "Set de 12 bolígrafos semi gel marca ESTOL en colores negro, azul y rojo. Ideales para la oficina o la escuela.",
     price: 2.5,
     image: "/img/IMG-20240529-WA0013.jpg",
-    category: "products"
+    category: "products",
+    stock: 6 
   }
 ];
 

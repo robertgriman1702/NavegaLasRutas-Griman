@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
-import useProduct from "../hooks/useproduct";
+import useProduct from "../../hooks/useproduct";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import Loading from "../Loading/Loading";
 
 const ItemDetailContainer = () => {
     const { productId } = useParams(); 
-    const { product, loading } = useProduct(Number(productId)); 
+    const { product, loading } = useProduct((productId)); 
 
     return (
         <div>

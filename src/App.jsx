@@ -3,19 +3,26 @@ import NavBar from './components/NavBar/NavBar.jsx';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.jsx';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer.jsx';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { CartProvider } from './context/CartContext.jsx';
+import Cart from './components/Cart/Cart.jsx';
+import Checkout from './components/checkout/checkout.jsx';
 
 function App() {
   return (
     <BrowserRouter>
-      <div className='App-container'>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<ItemListContainer />} />
-          <Route path="/category/:category" element={<ItemListContainer />} />
-          <Route path="/detail/:productId" element={<ItemDetailContainer />} />
-          <Route path="*" element={<h2 style={{color: "#fff", textAlign: "center"}}>404 - Página no encontrada</h2>} />
-        </Routes>
-      </div>
+      <CartProvider>
+        <div className='App-container'>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<ItemListContainer />} />
+            <Route path="/category/:category" element={<ItemListContainer />} />
+            <Route path="/detail/:productId" element={<ItemDetailContainer />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="*" element={<h2 style={{color: "#fff", textAlign: "center"}}>404 - Página no encontrada</h2>} />
+          </Routes>
+        </div>
+      </CartProvider>
     </BrowserRouter>
   );
 }
