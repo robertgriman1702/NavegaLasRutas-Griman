@@ -7,6 +7,7 @@ import { CartProvider } from './context/CartContext.jsx';
 import Cart from './components/Cart/Cart.jsx';
 import Checkout from './components/checkout/checkout.jsx';
 import WhatsButton from './components/whatsButton/whatsButton.jsx';
+import Viewpager from './components/Hero/hero.jsx';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <CartProvider>
         <div className='App-container'>
           <NavBar />
+          <Viewpager />
           <Routes>
             <Route path="/" element={<ItemListContainer />} />
             <Route path="/category/:category" element={<ItemListContainer />} />
