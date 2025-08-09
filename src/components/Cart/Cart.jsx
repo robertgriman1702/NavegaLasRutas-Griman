@@ -43,7 +43,7 @@ const Cart = () => {
             </div>
             
             <div className="cart-summary">
-              <p className="cart-total">Total de la compra: ${cart.reduce((total, product) => total + (product.price * product.quantity), 0)}</p>
+              <p className="cart-total">Total de la compra: ${total}</p>
               <Link to="/checkout" className="checkout-btn">
                 Continuar con la compra
               </Link>

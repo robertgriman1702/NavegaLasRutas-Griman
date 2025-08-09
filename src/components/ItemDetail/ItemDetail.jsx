@@ -1,5 +1,5 @@
 import React, { use } from 'react'
-import './ItemDetail.css'
+import './itemDetail.css'
 import Itemcount from '../ItemCount/Itemcount'
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext.jsx';
@@ -18,7 +18,7 @@ const ItemDetail = ({ product = {} }) => {
         <h2>{product.name}</h2>
         <p> Precio: ${product.price}</p>
         <p> Description: {product.description}</p>
-        <Itemcount stock={product.stock} addProduct={addProduct}/>
+        <Itemcount stock={product.stock} name= {product.name} addProduct={addProduct}/>
 
       </div>
       

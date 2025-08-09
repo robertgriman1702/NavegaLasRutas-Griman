@@ -6,6 +6,7 @@ import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { CartProvider } from './context/CartContext.jsx';
 import Cart from './components/Cart/Cart.jsx';
 import Checkout from './components/checkout/checkout.jsx';
+import WhatsButton from './components/whatsButton/whatsButton.jsx';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="*" element={<h2 style={{color: "#fff", textAlign: "center"}}>404 - Página no encontrada</h2>} />
           </Routes>
+          <WhatsButton />
         </div>
       </CartProvider>
     </BrowserRouter>
