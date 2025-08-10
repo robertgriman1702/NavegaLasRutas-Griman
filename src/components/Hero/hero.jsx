@@ -71,8 +71,4 @@ function Viewpager() {
   );
 }
 
-<<<<<<< HEAD
 export default Viewpager;
-=======
-export default Viewpager;
->>>>>>> origin/main
