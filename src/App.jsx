@@ -15,9 +15,16 @@ function App() {
       <CartProvider>
         <div className='App-container'>
           <NavBar />
-          <Viewpager />
           <Routes>
-            <Route path="/" element={<ItemListContainer />} />
+            <Route 
+              path="/" 
+              element={
+                <>
+                  <Viewpager />
+                  <ItemListContainer />
+                </>
+              } 
+            />
             <Route path="/category/:category" element={<ItemListContainer />} />
             <Route path="/detail/:productId" element={<ItemDetailContainer />} />
             <Route path="/cart" element={<Cart />} />
