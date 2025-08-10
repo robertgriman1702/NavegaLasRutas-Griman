@@ -7,7 +7,7 @@ import { CartProvider } from './context/CartContext.jsx';
 import Cart from './components/Cart/Cart.jsx';
 import Checkout from './components/checkout/checkout.jsx';
 import WhatsButton from './components/whatsButton/whatsButton.jsx';
-import Viewpager from './components/Hero/hero.jsx';
+import Viewpager from './components/Hero/Hero.jsx';
 
 function App() {
   return (
