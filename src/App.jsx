@@ -8,6 +8,7 @@ import Cart from './components/Cart/Cart.jsx';
 import Checkout from './components/checkout/checkout.jsx';
 import WhatsButton from './components/whatsButton/whatsButton.jsx';
 import Viewpager from './components/Hero/hero.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="*" element={<h2 style={{color: "#fff", textAlign: "center"}}>404 - Página no encontrada</h2>} />
           </Routes>
+          <Footer />
           <WhatsButton />
         </div>
       </CartProvider>
